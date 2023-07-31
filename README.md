@@ -1,3 +1,24 @@
+
+
+## Installation
+
+```bash
+$ npm install
+```
+
+## Running the app
+
+```bash
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+```
+
 <p align="center">
     <a href="#gh-dark-mode-only">
         <img src="https://cdn.digitaldrive.fr/corporate/logo-hd-white.png#gh-dark-mode-only" width="400" alt="Digital Value Logo" />
