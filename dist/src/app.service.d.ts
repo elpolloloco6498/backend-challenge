@@ -1,4 +1,5 @@
-import { FlatCategory } from 'schemas/category';
+import { Category } from 'schemas/category';
 export declare class AppService {
-    getCategories(): Promise<FlatCategory[]>;
+    getFlatCategories(): Promise<Category[]>;
+    getCategoriesWithChildrens(): Promise<Category[]>;
 }

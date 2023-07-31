@@ -16,16 +16,25 @@ let AppController = exports.AppController = class AppController {
     constructor(appService) {
         this.appService = appService;
     }
-    async getCategories() {
-        return this.appService.getCategories();
+    async getFlatCategories() {
+        return this.appService.getFlatCategories();
+    }
+    async getCategoriesWithChildrens() {
+        return this.appService.getCategoriesWithChildrens();
     }
 };
 __decorate([
-    (0, common_1.Get)(),
+    (0, common_1.Get)("/flat"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
-], AppController.prototype, "getCategories", null);
+], AppController.prototype, "getFlatCategories", null);
+__decorate([
+    (0, common_1.Get)("/childrens"),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], AppController.prototype, "getCategoriesWithChildrens", null);
 exports.AppController = AppController = __decorate([
     (0, common_1.Controller)(),
     __metadata("design:paramtypes", [app_service_1.AppService])
