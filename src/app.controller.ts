@@ -20,4 +20,9 @@ export class AppController {
   async getCategoriesWithAncestors(): Promise<Category[]> {
     return this.appService.getCategoriesWithAncestors();
   }
+
+  @Get("/volumes")
+  async getCategoriesWithSearchVolumes(): Promise<Category[]> {
+    return this.appService.getCategoriesWithSearchVolume();
+  }
 }

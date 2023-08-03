@@ -6,4 +6,5 @@ export declare class AppController {
     getFlatCategories(): Promise<Category[]>;
     getCategoriesWithChildrens(): Promise<Category[]>;
     getCategoriesWithAncestors(): Promise<Category[]>;
+    getCategoriesWithSearchVolumes(): Promise<Category[]>;
 }
