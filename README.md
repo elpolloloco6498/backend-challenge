@@ -19,6 +19,29 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+I have developped 4 api routes
+
+### Flat Categories
+```
+http://localhost:3000/flat
+```
+### Categories with childrens
+```
+http://localhost:3000/childrens
+```
+### Categories with ancestors
+```
+http://localhost:3000/ancestors
+```
+### Categories with volumes
+```
+http://localhost:3000/volumes
+```
+
+In order to test the backend app you will need to enter the urls inside the search bar of your browser. You can also choose to use a tool like Postman or a curl command.
+In your browser, under the Network tab you should see the api call.
+You can expand the row and select Preview in order to visualize the json structure of the response.
+
 <p align="center">
     <a href="#gh-dark-mode-only">
         <img src="https://cdn.digitaldrive.fr/corporate/logo-hd-white.png#gh-dark-mode-only" width="400" alt="Digital Value Logo" />
