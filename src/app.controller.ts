@@ -15,4 +15,9 @@ export class AppController {
   async getCategoriesWithChildrens(): Promise<Category[]> {
     return this.appService.getCategoriesWithChildrens();
   }
+
+  @Get("/ancestors")
+  async getCategoriesWithAncestors(): Promise<Category[]> {
+    return this.appService.getCategoriesWithAncestors();
+  }
 }

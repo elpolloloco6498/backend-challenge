@@ -22,6 +22,9 @@ let AppController = exports.AppController = class AppController {
     async getCategoriesWithChildrens() {
         return this.appService.getCategoriesWithChildrens();
     }
+    async getCategoriesWithAncestors() {
+        return this.appService.getCategoriesWithAncestors();
+    }
 };
 __decorate([
     (0, common_1.Get)("/flat"),
@@ -35,6 +38,12 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], AppController.prototype, "getCategoriesWithChildrens", null);
+__decorate([
+    (0, common_1.Get)("/ancestors"),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], AppController.prototype, "getCategoriesWithAncestors", null);
 exports.AppController = AppController = __decorate([
     (0, common_1.Controller)(),
     __metadata("design:paramtypes", [app_service_1.AppService])

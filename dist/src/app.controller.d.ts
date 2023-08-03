@@ -5,4 +5,5 @@ export declare class AppController {
     constructor(appService: AppService);
     getFlatCategories(): Promise<Category[]>;
     getCategoriesWithChildrens(): Promise<Category[]>;
+    getCategoriesWithAncestors(): Promise<Category[]>;
 }
